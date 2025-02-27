@@ -13,6 +13,10 @@
     --accent-glow:rgba(46,204,113,0.4);
     --text:#ffffff;
 }
+html
+{
+    scroll:smooth;
+}
 body
 {
     background-color: var(--dark-bg);
