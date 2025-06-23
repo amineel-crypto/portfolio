@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your Name - Data Engineer Portfolio</title> <!-- Changed Title -->
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    <!-- Corrected Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -21,50 +22,126 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>
-                Junior Data Engineer
-            </h1>
-            <p>Passionate Junior Data Engineer with a strong foundation in building data pipelines, optimizing
+            <h1>Junior Data Engineer</h1>
+            <p>
+                Passionate Junior Data Engineer with a strong foundation in building data pipelines, optimizing
                 workflows, and ensuring data quality. Eager to learn and contribute to data-driven solutions.
             </p>
-            <p class="highlight">Specializing in building efficient data pipelines, I am a passionate Junior Data
-                Engineer focused on optimizing workflows, ensuring data quality, and enabling data-driven
-                decision-making.</p>
             <a href="#contact" class="cta-button">Let's Connect</a>
         </div>
         <div class="hero-image">
-            <img src="satoru-gojo-pink-5120x2880-17593.png" alt="Profile" class="profile-img">
+            <!-- TODO: Replace "profile-image.jpg" with the actual path to your photo -->
+            <img src="profile-image.jpg" alt="Profile" class="profile-img">
         </div>
     </section>
+
     <section id="skills" class="skills">
         <h2>Technical Expertise</h2>
         <div class="skills-grid">
             <div class="skill-card">
-                <i class="fas fa-code"></i>
-                <h3>ETL process</h3>
-                <p>Pandas,Numpy,beautifulSoup</p>
+                <i class="fas fa-cogs"></i>
+                <h3>ETL & Streaming</h3>
+                <p>Kafka (Redpanda), Docker, Python</p>
             </div>
             <div class="skill-card">
-                <i class="fas fa-server"></i>
-                <h3>Data Warehouse,Data Lake,Github</h3>
+                <i class="fas fa-database"></i>
+                <h3>Databases</h3>
+                <p>MySQL, Oracle DB, MongoDB</p>
             </div>
             <div class="skill-card">
-                <i class="fas fa-paint-brush"></i>
-                <h3>Schema Designer</h3>
-                <p>DrawIO,MySQl schemas</p>
+                <i class="fas fa-project-diagram"></i>
+                <h3>API & Schema Design</h3>
+                <p>FastAPI, GraphQL (Beginner)</p>
             </div>
         </div>
     </section>
-    <footer>
-        <p>&copy:2025 Data Engineer.All Rights reserved</p>
+
+    <!-- Projects Section -->
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Bitcoin Price Streaming Pipeline</h3>
+                <p>Designed a real-time data pipeline with a microservices architecture to process and visualize Bitcoin
+                    prices.</p>
+                <p><strong>Stack:</strong> Kafka, Docker, Python, Streamlit</p>
+                <div class="project-links">
+                    <!-- TODO: Add link to your GitHub repo -->
+                    <a href="https://github.com/amineel-crypto/btc-real-time-streaming" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                    <!-- NEW BUTTON ADDED -->
+                    <!-- TODO: Add link to your architecture image/diagram -->
+                    <a href="btc-streaming.png" class="project-link" target="_blank"><i class="fas fa-project-diagram"></i>
+                        Architecture</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <i class="fas fa-brain"></i>
+                <h3>Brain Tumor Detection Web App</h3>
+                <p>Developed a Deep Learning (CNN) model for MRI image classification, integrated into a FastAPI web
+                    application.</p>
+                <p><strong>Stack:</strong> TensorFlow, Keras, Scikit-learn, FastAPI</p>
+                <div class="project-links">
+                    <a href="https://github.com/amineel-crypto/tumor" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                    <!-- NEW BUTTON ADDED -->
+                    <a href="mri-brain-tumor-detection-web-app.png" class="project-link" target="_blank"><i class="fas fa-project-diagram"></i>
+                        Architecture</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <i class="fas fa-user-md"></i>
+                <h3>Depression Prediction (Machine Learning)</h3>
+                <p>Built a predictive model to identify depression risk based on stress factor analysis.</p>
+                <p><strong>Stack:</strong> Scikit-learn, Pandas, Matplotlib, Seaborn</p>
+                <div class="project-links">
+                    <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                    <!-- NEW BUTTON ADDED -->
+                    <a href="#" class="project-link" target="_blank"><i class="fas fa-project-diagram"></i>
+                        Architecture</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Sales Prediction System</h3>
+                <p>Created a time-series model to forecast future company sales based on historical data.</p>
+                <p><strong>Stack:</strong> Python, Pandas, Prophet, Scikit-learn</p>
+                <div class="project-links">
+                    <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                    <!-- NEW BUTTON ADDED -->
+                    <a href="#" class="project-link" target="_blank"><i class="fas fa-project-diagram"></i>
+                        Architecture</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Fortune 500 Data Analysis Pipeline</h3>
+                <p>Automated web scraping and data analysis of Fortune 500 companies to extract business insights.</p>
+                <p><strong>Stack:</strong> BeautifulSoup, Scrapy, Pandas, SQLite</p>
+                <div class="project-links">
+                    <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                    <!-- NEW BUTTON ADDED -->
+                    <a href="#" class="project-link" target="_blank"><i class="fas fa-project-diagram"></i>
+                        Architecture</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact & Footer Section -->
+    <footer id="contact">
+        <!-- Corrected footer structure and copyright symbol -->
+        <p>© 2024 Data Engineer. All Rights Reserved.</p>
         <div class="social-links">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></div>
+            <!-- TODO: Add your real social media links -->
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a> <!-- LinkedIn is more professional -->
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
     </footer>
+
     <script src="index.js"></script>
 </body>
 
